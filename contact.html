@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yogeswari A | Contact</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+/* ===== Reset & Font ===== */
+* { margin:0; padding:0; box-sizing:border-box; font-family:'Poppins', sans-serif; }
+html { scroll-behavior: smooth; }
+
+/* ===== Body & Gradient Background ===== */
+body {
+    background: linear-gradient(135deg, #0a0f1f, #111a2e, #1b2a49);
+    color:#ffffff;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    position:relative;
+    padding-top:120px; /* Space for navbar */
+}
+body::before {
+    content:"";
+    position: fixed;
+    inset:0;
+    background: radial-gradient(circle at 25% 30%, rgba(0,255,200,0.25), transparent 40%),
+                radial-gradient(circle at 75% 70%, rgba(0,150,255,0.25), transparent 40%);
+    z-index:-1;
+    filter: blur(120px);
+}
+
+/* ===== Navbar ===== */
+nav {
+    position: fixed;
+    top:0;
+    right:0;
+    width:100%;
+    background: linear-gradient(90deg,#0f0f1a,#1c1c2b,#141421);
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    padding:20px 60px;
+    gap:25px;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    z-index:1000;
+}
+nav h2 {
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+    color:#ffffff;
+    font-size:18px;
+    font-weight:600;
+}
+nav a {
+    text-decoration:none;
+    color:#ffffff;
+    font-weight:500;
+    transition:0.3s;
+    padding:8px 14px;
+    border-radius:20px;
+}
+nav a:hover { background: linear-gradient(90deg,#ffffff,#e0e0ff); color:#000; transform: scale(1.08); }
+nav a.active { background: linear-gradient(90deg,#00f5d4,#9b5de5); color:#000; font-weight:600; box-shadow:0 0 15px rgba(0,245,212,0.7); }
+
+/* ===== Content ===== */
+.content {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:30px;
+    max-width:700px;
+    width:90%;
+}
+
+header h1 { font-size:50px; margin-bottom:15px; }
+header p { font-size:18px; line-height:1.6; color:#d1d1d1; }
+
+form {
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    width:100%;
+    background: rgba(255,255,255,0.08);
+    padding:25px;
+    border-radius:15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+    border: 1px solid rgba(255,255,255,0.1);
+    color:#fff;
+}
+
+input, textarea {
+    padding:10px;
+    border-radius:10px;
+    border:none;
+    font-size:16px;
+    outline:none;
+    resize:none;
+}
+
+button {
+    padding:12px;
+    border:none;
+    border-radius:25px;
+    background:#bb86fc;
+    color:#0f0f1a;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.3s;
+}
+button:hover { background:#9b5de5; }
+
+/* ===== Contact Details ===== */
+.contact-info {
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+    font-size:16px;
+}
+
+/* ===== Footer ===== */
+footer { text-align:center; padding:20px; color:#ffffffcc; margin-top:30px; }
+
+@media(max-width:768px){
+    nav { flex-wrap:wrap; justify-content:center; padding:15px 20px; gap:15px; }
+}
+</style>
+</head>
+<body>
+
+<!-- ===== Navbar ===== -->
+<nav>
+    <h2>Menu</h2>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="resume.html">Resume</a>
+    <a href="projects.html">My Projects</a>
+    <a href="skills.html">Skills</a>
+    <a href="certification.html">Certification</a>
+     <a href="experience.html">experience</a>
+   
+    <a href="contact.html" class="active">Contact</a>
+</nav>
+
+<!-- ===== Content ===== -->
+<div class="content">
+<header>
+    <h1>Contact Me</h1>
+    <p>Send me a message and I will get back to you as soon as possible.</p>
+</header>
+
+<!-- ===== Contact Form ===== -->
+<form action="send_message.php" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+    <button type="submit">Send Message</button>
+</form>
+
+<!-- ===== Direct Contact Info ===== -->
+<div class="contact-info">
+    <p>Email: ayogeswari2006@gmail.com</p>
+    <p>Phone: 6382604391</p>
+    <p>GitHub: <a href="https://github.com/yogi27012006" style="color:#bb86fc;">github.com/yogi27012006</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/a-yogeswari-99626636a" style="color:#bb86fc;">linkedin.com/in/a-yogeswari-99626636a</a></p>
+</div>
+</div>
+
+<!-- ===== Footer ===== -->
+
+
+</body>
+</html>
